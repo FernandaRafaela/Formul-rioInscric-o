@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Leia para uma criança</title>
+    <script src="validadorCpf.js"></script>
+    <link rel="stylesheet" href="estilo.css"/>
+
+</head>
+<body>
+    
+    <form>
+        <div id="cabecalho"> 
+            <h1>Formulário do Voluntário</h1></div>
+            <script type="text/javascript" src="validadorCpf.js"></script>
+            <div id="imagemgeral">
+                <img id="imagitau" src="leia-para-uma-crianca-2016.jpg" />
+            </div>
+            <div id="titulo2">
+            <h2>Informe os seus dados</h2>
+        </div>
+        <div id="conteudo">
+        <fieldset>
+            <table>
+                <tr>
+                    <td>
+                        <label for="in-nome">Nome completo*</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Digite seu nome completo" id="in-nome" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="in-cpf">CPF*</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Digite seu CPF" id="in-cpf" onblur="verificaCPF (this.value)" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="in-rg">RG</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Digite seu RG" id="in-rg">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sel-sexo">Sexo</label>
+                    </td>
+                    <td>
+                        <select id="sel-sexo" name="sel-sexo">
+                            <option selected disabled>Selecione</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                        </select>
+                    </td>
+                </tr>
+				</table>
+				</fieldset>
+				 <fieldset>
+				<table>
+                <tr>
+                    <td>
+                        <label for="in-cep">CEP*</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Digite seu CEP" ID="in-cep" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="in-logradouro">Logradouro*</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Digite o logradouro" id="in-logradouro" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="in-numero">Número*</label>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Digite o número" id="in-numero" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="in-bairro">Bairro*</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Digite o seu bairro" id="in-bairro" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="in-cidade">Cidade*</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Digite a sua cidade" id="in-cidade" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sel-estado">Estado*</label>
+                    </td>
+                    <td>
+                        <select name="estado" id="sel-estado">
+                            <option selected disabled>Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="Al">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espirito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="in-fixo">Telefone Fixo</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="(xxx) xxxx-xxxx" id="in-fixo">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="in-celular">Telefone Celular*</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="(xxx) xxxxx-xxxx" id="in-celular" required>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">Cadastrar</button>
+            <br>
+        
+        </div>
+        </fieldset>
+        <p>*Obrigatório</p>
+    </form>
+    <hr>
+    <footer>
+        <div class="rodape">
+            <div class="ajusteRodape">
+                <h3  class="textoRodape">©️ 2021 ITAÚ | LEIA PARA UMA CRIANÇA. Todos os direitos reservados</h3>
+                <h4  class="textoRodape">
+                    <a href="https://itautech.gama.academy/"> Programa Formação Tech Itaú|</a>
+                    <a href="https://xpcorp.gama.academy/"> Gama Academy|</a>
+                    <a href="https://www.linkedin.com/in/fernanda-gomes-borges/">Fernanda Borges </a>
+                </h4>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
